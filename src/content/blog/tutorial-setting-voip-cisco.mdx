@@ -1,0 +1,122 @@
+---
+title: "Tutorial Setting VoIP di Cisco Packet Tracer dengan Command Line Interface"
+publishedAt: "2023-03-09"
+updatedAt: "2023-03-09"
+author: "Muhammad Wilda Afn"
+summary: "Tutorial konfigurasi VoIP sederhana menggunakan Cisco Packet Tracer dengan CLI, meliputi setup router, DHCP, telephony service, VLAN switch, hingga pengujian IP Phone."
+image: "https://i0.wp.com/tkj.smkislam1blitar.sch.id/wp-content/uploads/2023/03/COVER-WEB-1.png?fit=1920%2C1080&ssl=1"
+---
+
+![Konfigurasi VOIP pada Cisco Packet Tracer](https://i0.wp.com/tkj.smkislam1blitar.sch.id/wp-content/uploads/2023/03/COVER-WEB-1.png?fit=1920%2C1080&ssl=1)
+
+## Pengertian VOIP
+
+VOIP (Voice Over Internet Protocol) adalah teknologi yang memungkinkan kita melakukan percakapan suara atau panggilan telepon melalui jaringan seperti Intranet atau Internet. Teknologi ini banyak digunakan sebagai sarana komunikasi di lingkungan kantor maupun sebagai media pelayanan customer service.
+
+---
+
+## Tujuan Simulasi
+
+Simulasi ini bertujuan untuk memahami cara merancang dan mengkonfigurasi jaringan VOIP sederhana menggunakan Cisco Packet Tracer. Disarankan menggunakan Cisco Packet Tracer versi 6 ke atas agar fitur VOIP dapat berjalan dengan baik.
+
+---
+
+## 1. Persiapan Topologi Jaringan
+
+Topologi yang digunakan meliputi:
+
+- 1 Router Cisco 2811
+- 1 Switch Cisco Catalyst 2960-24TT
+- 2 Cisco IP Phone 7960 Series
+
+Susun perangkat di Cisco Packet Tracer sesuai topologi berikut.
+
+![Topologi Jaringan VoIP](https://i0.wp.com/smkpsmwarujayeng.sch.id/wp-content/uploads/2020/11/Voip-1.png?w=1080&ssl=1)
+
+---
+
+## 2. Konfigurasi Router
+
+### a. Memberikan IP Address pada Router
+
+```bash
+R1>enable
+R1#configure terminal
+R1(config)#interface FastEthernet0/0
+R1(config-if)#no shutdown
+R1(config-if)#interface FastEthernet0/0.10
+R1(config-subif)#encapsulation dot1q 10
+R1(config-subif)#ip address 192.168.1.1 255.255.255.0
+```
+
+### b. Mengaktifkan DHCP Server
+
+```bash
+R1(config)#ip dhcp pool iptelepon
+R1(dhcp-config)#network 192.168.1.0 255.255.255.0
+R1(dhcp-config)#default-router 192.168.1.1
+R1(dhcp-config)#option 150 ip 192.168.1.1
+```
+
+### c. Mengaktifkan Telephony Service
+
+```bash
+R1(config)#telephony-service
+R1(config-telephony)#ip source-address 192.168.1.1 port 2000
+R1(config-telephony)#max-dn 2
+R1(config-telephony)#max-ephone 2
+R1(config-telephony)#auto assign 1 to 2
+
+R1(config-telephony)#ephone-dn 1
+R1(config-ephone-dn)#number 1001
+
+R1(config-telephony)#ephone-dn 2
+R1(config-ephone-dn)#number 1002
+```
+
+> Karena simulasi hanya menggunakan 2 IP Phone, maka `max-dn` dan `max-ephone` diatur menjadi 2. Jika ingin menambahkan IP Phone maka tambahkan `max-dn` `max-ephone` menjadi 3.
+
+---
+
+## 3. Konfigurasi Switch
+
+```bash
+SW1>enable
+SW1#configure terminal
+
+SW1(config)#vlan 10
+
+SW1(config)#interface FastEthernet0/1
+SW1(config-if)#switchport mode trunk
+
+SW1(config)#interface range FastEthernet0/2-4
+SW1(config-if-range)#switchport voice vlan 10
+```
+
+---
+
+## 4. Pengujian IP Phone
+
+Setelah konfigurasi Router dan Switch selesai:
+
+- IP Phone akan otomatis mendapatkan IP Address dan dial number.
+- Lakukan pengujian panggilan:
+  - Dari IP Phone 1 (1001) ke IP Phone 2 (1002)
+  - Atau sebaliknya
+
+![Pengujian 1 VoIP Cisco Packet Tracer](https://i0.wp.com/smkpsmwarujayeng.sch.id/wp-content/uploads/2020/11/voip2.jpg?w=1080&ssl=1)
+
+Jika panggilan berhasil dilakukan dan kedua IP Phone dapat saling terhubung, maka simulasi VOIP berhasil dilakukan.
+
+![Pengujian 2 VoIP Cisco Packet Tracer](https://i0.wp.com/smkpsmwarujayeng.sch.id/wp-content/uploads/2020/11/voip3.jpg?w=1080&ssl=1)
+
+---
+
+## Kesimpulan
+
+Dengan menggunakan Cisco Packet Tracer, kita dapat melakukan simulasi jaringan VOIP sederhana menggunakan konfigurasi CLI pada Router dan Switch Cisco. Simulasi ini membantu memahami dasar implementasi telephony service, DHCP, VLAN voice, dan komunikasi IP Phone pada jaringan komputer.
+
+---
+
+Sumber:
+https://tkj.smkislam1blitar.sch.id/tutorial-setting-voip-di-simulasi-jaringan-cisco-packet-tracer-dengan-cli/
