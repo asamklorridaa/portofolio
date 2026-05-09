@@ -52,7 +52,7 @@ export const DATA = {
     },
   },
   photos: [
-    { src: "/photos/2-cybersecurity.png", alt: "Juara 2 Cyber Security" },
+    { src: "https://instagram.fjog3-1.fna.fbcdn.net/v/t51.82787-15/624900665_18253504300294188_2065462379022826555_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=MzgyMjY0NzM4MTM3NjIyMjM5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=i-58yCDYrqMQ7kNvwGvICsU&_nc_oc=AdriLEsdWpovKx1osZ9_vCKQeGhIMAafN7Hca1zcVMB-7GeTYRzm8qQQ0VOpmU62wfPoFBaMtYFI790A_xienqIW&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fjog3-1.fna&_nc_gid=JvB0xaItyRDUT2owruKjhw&_nc_ss=7a22e&oh=00_Af7MG-z62T396wxHdNf3Zp_9tUYw1LfmTucfn3gP9-Q-2w&oe=6A0522A2", alt: "Juara 2 Cyber Security" },
     // { src: "/photos/photo2.jpg", alt: "Photo 2" },
     // { src: "/photos/photo3.jpg", alt: "Photo 3" },
     // { src: "/photos/photo4.jpg", alt: "Photo 4" },
