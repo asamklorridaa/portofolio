@@ -8,19 +8,6 @@ type CodeProps = ComponentProps<"code"> & {
 
 export const mdxComponents = {
   MediaContainer,
-  a: ({ href, children, ...props }: ComponentProps<"a">) => {
-    const isExternal = typeof href === "string" && /^https?:\/\//.test(href);
-    return (
-      <a
-        href={href}
-        target={isExternal ? "_blank" : undefined}
-        rel={isExternal ? "noopener noreferrer" : undefined}
-        {...props}
-      >
-        {children}
-      </a>
-    );
-  },
   pre: (props: ComponentProps<"pre">) => <CodeBlock {...props} />,
   hr: (props: ComponentProps<"hr">) => (
     <div className="my-10 flex w-full items-center" {...props}>

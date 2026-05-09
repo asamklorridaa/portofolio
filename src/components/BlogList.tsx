@@ -34,7 +34,7 @@ export default function BlogList({ posts, allPostsCount, pagination, pageSize }:
           </span>
         </h1>
         <p className="text-sm text-muted-foreground mb-8">
-          My personal reflections about web development, life, and more.
+          Refleksi pribadi saya tentang Cyber Security, kehidupan, dan topik lainnya.
         </p>
       </BlurFade>
 
