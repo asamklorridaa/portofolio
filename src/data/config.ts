@@ -3,9 +3,9 @@ export const CONFIG = {
   // Site Settings
   // ---------------------------------------------------------------------------
   site: {
-    url: "https://alexmercer.dev",
+    url: "https://asamklorridaa.vercel.app",
     locale: "en_US",
-    twitterHandle: "@alexmercer_dev",
+    twitterHandle: "@asamklorridaa",
   },
 
   // ---------------------------------------------------------------------------
