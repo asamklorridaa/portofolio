@@ -21,7 +21,7 @@ export const DATA = {
     "Mahasiswa aktif Politeknik Negeri Cilacap jurusan Rekayasa Keamanan Cyber. Memiliki minat dalam dunia teknologi informasi dan Digital Production.",
   summary:
     "In early 2023, I left a senior engineering role to go all-in on building my own SaaS products. Before that, [I completed a double degree in computer science and business](/#education), [interned at companies like Stripe and Cloudflare](/#work), and [competed in 18+ hackathons](/#hackathons). I also spent a summer in San Francisco as part of a founder residency focused on shipping fast and finding early customers.",
-  avatarUrl: "/picofme.png",
+  avatarUrl: "/fachri.png",
   ogImage: "/og_image.png",
   sections: {
     about: { order: 1, enabled: true, heading: "About" },
