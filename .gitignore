@@ -3,6 +3,7 @@
 .claude/
 .vscode/
 .wrangler/
+.vercel/
 
 # build output
 dist/
