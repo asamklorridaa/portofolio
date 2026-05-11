@@ -53,15 +53,11 @@ export const DATA = {
     },
   },
   photos: [
-    // { src: "/photos/photo1.jpg", alt: "Photo 1" },
-    // { src: "/photos/photo2.jpg", alt: "Photo 2" },
-    // { src: "/photos/photo3.jpg", alt: "Photo 3" },
-    // { src: "/photos/photo4.jpg", alt: "Photo 4" },
-    // { src: "/photos/photo5.jpg", alt: "Photo 5" },
-    // { src: "/photos/photo6.jpg", alt: "Photo 6" },
-    // { src: "/photos/photo7.jpg", alt: "Photo 7" },
-    // { src: "/photos/photo8.jpg", alt: "Photo 8" },
-    // { src: "/photos/photo9.jpg", alt: "Photo 9" },
+    { src: "/photos/cyber3.jpg", alt: "Foto pengumuman juara kompetisi cyber security" },
+    { src: "/photos/cyber2.jpg", alt: "Foto dengan lawan kompetisi cyber security" },
+    { src: "/photos/cyber1.jpg", alt: "Foto dengan lawan kompetisi cyber security" },
+    { src: "/photos/pkl1.jpg", alt: "Foto PKL dengan pembimbing" },
+    
   ],
   skills: [
     { name: "Astro", icon: Astro },
