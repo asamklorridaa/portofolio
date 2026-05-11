@@ -1,15 +1,16 @@
 import { Icons } from "@/components/icons";
 import { House, Library } from "lucide-react";
-import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
-import { Typescript } from "@/components/ui/svgs/typescript";
 import { Nodejs } from "@/components/ui/svgs/nodejs";
 import { Python } from "@/components/ui/svgs/python";
-import { Golang } from "@/components/ui/svgs/golang";
-import { Postgresql } from "@/components/ui/svgs/postgresql";
-import { Docker } from "@/components/ui/svgs/docker";
-import { Kubernetes } from "@/components/ui/svgs/kubernetes";
 import { Astro } from "@/components/ui/svgs/astro";
+import { Figma } from "@/components/ui/svgs/figma";
+import { Affinity } from "@/components/ui/svgs/affinity";
+import { MicrosoftOffice } from "@/components/ui/svgs/msoffice";
+import { Canva } from "@/components/ui/svgs/canva";
+import { VSCode } from "@/components/ui/svgs/vscode";
+import { Cisco } from "@/components/ui/svgs/cisco";
+import { MikroTik } from "@/components/ui/svgs/mikrotik";
 
 export const DATA = {
   name: "Fachri Ahsani - Cyber Security Engineer",
@@ -27,7 +28,7 @@ export const DATA = {
     about: { order: 1, enabled: true, heading: "About" },
     work: { order: 2, enabled: true, heading: "Work Experience", presentLabel: "Present" },
     education: { order: 3, enabled: true, heading: "Education" },
-    skills: { order: 4, enabled: false, heading: "Skills" },
+    skills: { order: 4, enabled: true, heading: "Skills" },
     projects: {
       order: 5, enabled: false,
       label: "My Projects",
@@ -64,15 +65,16 @@ export const DATA = {
   ],
   skills: [
     { name: "Astro", icon: Astro },
-    { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
-    { name: "Typescript", icon: Typescript },
     { name: "Node.js", icon: Nodejs },
     { name: "Python", icon: Python },
-    { name: "Go", icon: Golang },
-    { name: "Postgres", icon: Postgresql },
-    { name: "Docker", icon: Docker },
-    { name: "Kubernetes", icon: Kubernetes },
+    { name: "Figma", icon: Figma },
+    { name: "Affinity", icon: Affinity },
+    { name: "Microsoft Office", icon: MicrosoftOffice },
+    { name: "Canva", icon: Canva },
+    { name: "VS Code", icon: VSCode },
+    { name: "Cisco", icon: Cisco },
+    { name: "MikroTik", icon: MikroTik },
   ],
   navbar: [
     { href: "/", icon: House, label: "Home" },

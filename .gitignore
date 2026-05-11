@@ -1,4 +1,5 @@
 # misc
+.npmrc
 .claude/
 .vscode/
 .wrangler/
