@@ -8,7 +8,6 @@ import ContactSection from "@/components/section/contact-section";
 import HackathonsSection from "@/components/section/hackathons-section";
 import PhotosSection from "@/components/section/photos-section";
 import ProjectsSection from "@/components/section/projects-section";
-import ServicesSection from "@/components/section/services-section";
 import WorkSection from "@/components/section/work-section";
 import { ArrowUpRight } from "lucide-react";
 
@@ -125,13 +124,6 @@ const sectionComponents: Record<string, React.ReactNode> = {
     <section id="projects">
       <BlurFade delay={BLUR_FADE_DELAY * 11}>
         <ProjectsSection />
-      </BlurFade>
-    </section>
-  ),
-  services: (
-    <section id="services">
-      <BlurFade delay={BLUR_FADE_DELAY * 12}>
-        <ServicesSection />
       </BlurFade>
     </section>
   ),

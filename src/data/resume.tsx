@@ -346,58 +346,6 @@ export const DATA = {
       video: "https://cdn.llm.report/openai-demo.mp4",
     },
   ],
-  services: [
-    // {
-    //   title: "Penetration Testing",
-    //   description:
-    //     "Melakukan security testing komprehensif pada sistem dan aplikasi Anda untuk mengidentifikasi celah keamanan sebelum dimanfaatkan oleh pihak jahat.",
-    //   price: "Hubungi untuk quote",
-    //   icon: "🛡️",
-    //   technologies: ["Burp Suite", "Nmap", "Metasploit", "Wireshark"],
-    //   whatsappMessage: "Halo, saya tertarik dengan layanan Penetration Testing. Bisakah kita diskusi lebih lanjut?",
-    //   image: "",
-    // },
-    // {
-    //   title: "Network Configuration & Security",
-    //   description:
-    //     "Konfigurasi jaringan enterprise dengan fokus pada keamanan menggunakan teknologi Cisco dan MikroTik, termasuk firewall, VPN, dan security protocols.",
-    //   price: "Hubungi untuk quote",
-    //   icon: "🌐",
-    //   technologies: ["Cisco", "MikroTik", "VPN", "Firewall"],
-    //   whatsappMessage: "Halo, saya tertarik dengan layanan Network Configuration & Security. Bisakah kita diskusi lebih lanjut?",
-    //   image: "",
-    // },
-    {
-      title: "Security Awareness Training",
-      description:
-        "Program pelatihan keamanan siber untuk karyawan organisasi Anda guna meningkatkan kesadaran dan mengurangi risiko human error.",
-      price: "Hubungi untuk quote",
-      icon: "📚",
-      technologies: ["Booklet", "Best Practices", "Capture The Flag", "Jeopardy"],
-      whatsappMessage: "Halo, saya tertarik dengan layanan Security Awareness Training. Bisakah kita diskusi lebih lanjut?",
-      image: "",
-    },
-    // {
-    //   title: "Web Development & Design",
-    //   description:
-    //     "Membangun website modern responsif dengan teknologi latest seperti Astro, Next.js, dan React. Dilengkapi dengan SEO optimization dan performance tuning.",
-    //   price: "Hubungi untuk quote",
-    //   icon: "💻",
-    //   technologies: ["Astro", "Next.js", "React", "Tailwind CSS"],
-    //   whatsappMessage: "Halo, saya tertarik dengan layanan Web Development & Design. Bisakah kita diskusi lebih lanjut?",
-    //   image: "",
-    // },
-    {
-      title: "Digital Production & Content",
-      description:
-        "Layanan produksi konten digital termasuk desain grafis, video editing, dan content creation menggunakan tools profesional.",
-      price: "Hubungi untuk quote",
-      icon: "🎨",
-      technologies: ["Figma", "Affinity", "Canva"],
-      whatsappMessage: "Halo, saya tertarik dengan layanan Digital Production & Content. Bisakah kita diskusi lebih lanjut?",
-      image: "",
-    },
-  ],
   hackathons: [
     {
       title: "PNW Hacks 2022",
