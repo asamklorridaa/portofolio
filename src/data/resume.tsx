@@ -35,12 +35,7 @@ export const DATA = {
       heading: "Check out my latest work",
       text: "I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.",
     },
-    services: {
-      order: 6, enabled: true,
-      label: "Services",
-      heading: "Jasa & Layanan",
-      text: "Saya menawarkan berbagai jasa di bidang keamanan siber, dan digital production. Hubungi saya untuk kebutuhan Anda.",
-    },
+
     hackathons: {
       order: 7, enabled: false,
       label: "Hackathons",
