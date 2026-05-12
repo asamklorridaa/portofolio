@@ -19,9 +19,9 @@ export const DATA = {
   location: "Banyumas, Indonesia",
   locationLink: "https://www.google.com/maps/place/banyumas",
   description:
-    "Mahasiswa aktif Politeknik Negeri Cilacap jurusan Rekayasa Keamanan Cyber. Memiliki minat dalam dunia teknologi informasi dan Digital Production.",
+    "Lulusan SMK Jurusan Teknik Komputer dan Jaringan memiliki pengalaman dalam bidang keamanan siber, jaringan komputer, dan teknologi informasi.",
   summary:
-    "Saat ini saya merupakan mahasiswa aktif [Politeknik Negeri Cilacap](https://pmb.pnc.ac.id/) jurusan [Rekayasa Keamanan Cyber](https://jkb.pnc.ac.id/siber/) yang memiliki ketertarikan besar pada dunia teknologi informasi, keamanan siber, dan digital production. Saya senang mempelajari berbagai teknologi baru, mengembangkan keterampilan di bidang IT, serta membangun proyek kreatif dan modern yang menggabungkan aspek desain, teknologi, dan pengalaman pengguna.",
+    "Saya adalah seorang lulusan [SMK Muhammadiyah 1 Ajibarang](https://smkmuh1ajb.sch.id/) jurusan [Teknik Komputer dan Jaringan](https://smkmuh1ajb.sch.id/kompetensi-keahlian/teknik-komputer-dan-jaringan/) dengan pengalaman dalam bidang keamanan siber, jaringan komputer, dan teknologi informasi. Saya memiliki banyak kemampuan dalam Dunia Digital.",
   avatarUrl: "/fachri.png",
   ogImage: "/og_image.png",
   sections: {
@@ -211,14 +211,14 @@ export const DATA = {
     //   start: "2018",
     //   end: "2023",
     // },
-    {
-      school: "Politeknik Negeri Cilacap",
-      href: "https://pmb.pnc.ac.id",
-      degree: "Diploma 4 Rekayasa Keamanan Cyber",
-      logoUrl: "https://www.google.com/s2/favicons?domain=pmb.pnc.ac.id&sz=128",
-      start: "2026",
-      end: "Present",
-    },
+    // {
+    //   school: "Politeknik Negeri Cilacap",
+    //   href: "https://pmb.pnc.ac.id",
+    //   degree: "Diploma 4 Rekayasa Keamanan Cyber",
+    //   logoUrl: "https://www.google.com/s2/favicons?domain=pmb.pnc.ac.id&sz=128",
+    //   start: "2026",
+    //   end: "Present",
+    // },
     {
       school: "SMK Muhammadiyah 1 Ajibarang",
       href: "https://smkmuh1ajb.sch.id",
