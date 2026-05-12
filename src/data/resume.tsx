@@ -11,6 +11,7 @@ import { Canva } from "@/components/ui/svgs/canva";
 import { VSCode } from "@/components/ui/svgs/vscode";
 import { Cisco } from "@/components/ui/svgs/cisco";
 import { MikroTik } from "@/components/ui/svgs/mikrotik";
+import { Git } from "@/components/ui/svgs/git";
 
 export const DATA = {
   name: "Fachri Ahsani - Cyber Security Engineer",
@@ -72,6 +73,7 @@ export const DATA = {
     { name: "VS Code", icon: VSCode },
     { name: "Cisco", icon: Cisco },
     { name: "MikroTik", icon: MikroTik },
+    { name: "Git", icon: Git },
   ],
   navbar: [
     { href: "/", icon: House, label: "Home" },
