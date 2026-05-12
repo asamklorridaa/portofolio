@@ -12,6 +12,9 @@ import { VSCode } from "@/components/ui/svgs/vscode";
 import { Cisco } from "@/components/ui/svgs/cisco";
 import { MikroTik } from "@/components/ui/svgs/mikrotik";
 import { Git } from "@/components/ui/svgs/git";
+import { VMware } from "@/components/ui/svgs/vmware";
+import { VirtualBox } from "@/components/ui/svgs/virtualbox";
+import { Linux } from "@/components/ui/svgs/linux";
 
 export const DATA = {
   name: "Fachri Ahsani - Cyber Security Engineer",
@@ -74,6 +77,9 @@ export const DATA = {
     { name: "Cisco", icon: Cisco },
     { name: "MikroTik", icon: MikroTik },
     { name: "Git", icon: Git },
+    { name: "VMware", icon: VMware },
+    { name: "VirtualBox", icon: VirtualBox },
+    { name: "Linux", icon: Linux },
   ],
   navbar: [
     { href: "/", icon: House, label: "Home" },
