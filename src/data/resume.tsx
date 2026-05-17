@@ -27,7 +27,7 @@ export const DATA = {
   summary:
     "Saya adalah seorang lulusan [SMK Muhammadiyah 1 Ajibarang](https://smkmuh1ajb.sch.id/) jurusan [Teknik Komputer dan Jaringan](https://smkmuh1ajb.sch.id/kompetensi-keahlian/teknik-komputer-dan-jaringan/) dengan pengalaman dalam bidang keamanan siber, jaringan komputer, dan teknologi informasi. Saya memiliki banyak kemampuan dalam Dunia Digital.",
   avatarUrl: "/fachri.png",
-  ogImage: "/og.png",
+  ogImage: "/og_image.png",
   sections: {
     about: { order: 1, enabled: true, heading: "About" },
     work: { order: 2, enabled: true, heading: "Work Experience", presentLabel: "Present" },
