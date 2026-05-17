@@ -1,0 +1,12 @@
+---
+export const prerender = true;
+import Layout from "../../layouts/Layout.astro";
+import NextSolPage from "@/components/NextSolPage";
+---
+
+<Layout
+  title="NextSol — Solusi Digital & Teknologi"
+  description="Layanan desain, servis HP & laptop, dan pembuatan website profesional. NextSol hadir sebagai solusi digital all-in-one untuk kebutuhan Anda."
+>
+  <NextSolPage client:only="react" />
+</Layout>

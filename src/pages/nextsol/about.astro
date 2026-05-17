@@ -1,0 +1,12 @@
+---
+export const prerender = true;
+import Layout from "../../layouts/Layout.astro";
+import NextSolAboutPage from "@/components/NextSolAboutPage";
+---
+
+<Layout
+  title="About NextSol — Brand Identity"
+  description="Identitas visual dan brand story NextSol — layanan solusi digital & teknologi untuk desain, servis perangkat, dan pembuatan website."
+>
+  <NextSolAboutPage client:only="react" />
+</Layout>
