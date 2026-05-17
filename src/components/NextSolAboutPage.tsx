@@ -96,7 +96,7 @@ export default function NextSolAboutPage() {
                 </p>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Filosofi desain berpusat pada konsep "solusi" — setiap elemen logo merepresentasikan
-                  koneksi antara kebutuhan klien dan jawaban yang cepat, tepat, serta andal dari NextSol.
+                  koneksi antara kebutuhan klien dan jawaban yang cepat dan tepat dari NextSol.
                 </p>
               </div>
             </div>
