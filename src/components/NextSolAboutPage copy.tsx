@@ -50,11 +50,12 @@ export default function NextSolAboutPage() {
 
           {/* ── Primary Logo Block ─── */}
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs font-semibold tracking-widest uppercase text-muted-foreground">
                   Primary Logo
                 </span>
+                <h3 className="text-lg font-semibold">Logo Utama</h3>
               </div>
 
               {/* Logo Display Area */}
@@ -104,19 +105,22 @@ export default function NextSolAboutPage() {
 
           <Separator />
 
-          {/* ── Makna Logo ─── */}
+          {/* ── Secondary Logo Block ─── */}
           <BlurFade delay={BLUR_FADE_DELAY * 7} inView>
             <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-1.5">
-                <h3 className="text-lg font-semibold">Makna Logo 1</h3>
+                <span className="text-xs font-semibold tracking-widest uppercase text-muted-foreground">
+                  Secondary Logo
+                </span>
+                <h3 className="text-lg font-semibold">Logo Alternatif</h3>
               </div>
 
               {/* Logo Display Area */}
               <div className="border border-border rounded-xl bg-muted/30 flex items-center justify-center min-h-48 px-8 py-10">
                 <img
-                  src="/nextsol/makna-1.png"
-                  alt="Makna Logo 1"
-                  className="max-h-40 max-w-full object-contain"
+                  src="/nextsol/logo-secondary.png"
+                  alt="NextSol Secondary Logo"
+                  className="max-h-28 max-w-full object-contain"
                   onError={(e) => {
                     const el = e.currentTarget as HTMLImageElement;
                     el.style.display = "none";
@@ -133,7 +137,7 @@ export default function NextSolAboutPage() {
                   </div>
                   <span className="text-sm font-medium">NS</span>
                   <span className="text-xs text-center max-w-40">
-                    Tempatkan file <code className="text-xs bg-muted px-1 rounded">makna-1.png</code> di{" "}
+                    Tempatkan file <code className="text-xs bg-muted px-1 rounded">logo-secondary.png</code> di{" "}
                     <code className="text-xs bg-muted px-1 rounded">public/nextsol/</code>
                   </span>
                 </div>
@@ -142,95 +146,13 @@ export default function NextSolAboutPage() {
               {/* Secondary Logo Description */}
               <div className="flex flex-col gap-2">
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Makna pertama logo NextSol mencerminkan siluet seorang atlet yang sedang berlari, melambangkan semangat untuk terus bergerak maju dalam mengejar kemenangan, kesuksesan, dan kejayaan tanpa henti.
+                  Logo alternatif NextSol hadir dalam bentuk yang lebih ringkas dan compact, dirancang
+                  khusus untuk penggunaan di ruang terbatas seperti ikon aplikasi, avatar profil,
+                  dan header berukuran kecil.
                 </p>
-              </div>
-            </div>
-          </BlurFade>
-
-          {/* ── Makna Logo 2 ─── */}
-          <BlurFade delay={BLUR_FADE_DELAY * 7} inView>
-            <div className="flex flex-col gap-6">
-              <div className="flex flex-col gap-1.5">
-                <h3 className="text-lg font-semibold">Makna Logo 2</h3>
-              </div>
-
-              {/* Logo Display Area */}
-              <div className="border border-border rounded-xl bg-muted/30 flex items-center justify-center min-h-48 px-8 py-10">
-                <img
-                  src="/nextsol/makna-2.png"
-                  alt="NextSol Makna 2"
-                  className="max-h-40 max-w-full object-contain"
-                  onError={(e) => {
-                    const el = e.currentTarget as HTMLImageElement;
-                    el.style.display = "none";
-                    const placeholder = el.nextElementSibling as HTMLElement;
-                    if (placeholder) placeholder.style.display = "flex";
-                  }}
-                />
-                <div
-                  className="hidden flex-col items-center gap-3 text-muted-foreground"
-                  aria-hidden="true"
-                >
-                  <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <Globe className="size-6 text-primary" />
-                  </div>
-                  <span className="text-sm font-medium">NS</span>
-                  <span className="text-xs text-center max-w-40">
-                    Tempatkan file <code className="text-xs bg-muted px-1 rounded">makna-2.png</code> di{" "}
-                    <code className="text-xs bg-muted px-1 rounded">public/nextsol/</code>
-                  </span>
-                </div>
-              </div>
-
-              {/* Makna Logo 2 Description */}
-              <div className="flex flex-col gap-2">
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Kedua logo NextSol membentuk wajah tersenyum sebagai simbol keramahan, kenyamanan, dan kepuasan pelanggan. Elemen ini juga mencerminkan bahwa NextSol mengutamakan pelayanan yang humanis, mudah didekati, dan berfokus pada pengalaman terbaik bagi pelanggan.
-                </p>
-              </div>
-            </div>
-          </BlurFade>
-
-          {/* ── Makna Logo ─── */}
-          <BlurFade delay={BLUR_FADE_DELAY * 7} inView>
-            <div className="flex flex-col gap-6">
-              <div className="flex flex-col gap-1.5">
-                <h3 className="text-lg font-semibold">Makna Logo</h3>
-              </div>
-
-              {/* Logo Display Area */}
-              <div className="border border-border rounded-xl bg-muted/30 flex items-center justify-center min-h-48 px-8 py-10">
-                <img
-                  src="/nextsol/makna-3.png"
-                  alt="Makna Logo 3"
-                  className="max-h-40 max-w-full object-contain"
-                  onError={(e) => {
-                    const el = e.currentTarget as HTMLImageElement;
-                    el.style.display = "none";
-                    const placeholder = el.nextElementSibling as HTMLElement;
-                    if (placeholder) placeholder.style.display = "flex";
-                  }}
-                />
-                <div
-                  className="hidden flex-col items-center gap-3 text-muted-foreground"
-                  aria-hidden="true"
-                >
-                  <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <Globe className="size-6 text-primary" />
-                  </div>
-                  <span className="text-sm font-medium">NS</span>
-                  <span className="text-xs text-center max-w-40">
-                    Tempatkan file <code className="text-xs bg-muted px-1 rounded">makna-3.png</code> di{" "}
-                    <code className="text-xs bg-muted px-1 rounded">public/nextsol/</code>
-                  </span>
-                </div>
-              </div>
-
-              {/* Secondary Logo Description */}
-              <div className="flex flex-col gap-2">
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Makna ketiga logo NextSol adalah tanpak 2 huruf S yang menyatu dan di flip secara horizontal, yang menyambung pada bagiaan punggung huruf S, yang mengartikan sambungan kata Sol dari NextSol yang artinya adalah Solution. Karna visi kami membantu memecahkan sebuah masalah yang dihadapi oleh pelanggan. 
+                  Meski lebih sederhana, logo ini tetap mempertahankan elemen identitas visual inti
+                  yang konsisten dengan logo utama — menjaga kohesivitas brand di berbagai konteks penggunaan.
                 </p>
               </div>
             </div>
@@ -249,8 +171,8 @@ export default function NextSolAboutPage() {
               <p>
                 NextSol adalah layanan teknologi dan digital yang berfokus pada tiga bidang utama:
                 desain kreatif, servis perangkat, dan pembuatan website. Didirikan dengan visi
-                menjadi penyedia jasa teknologi yang dapat diandalkan, NextSol hadir untuk menjembatani kebutuhan digital
-                pengguna dan solusi yang cepat, terjangkau, serta berkualitas.
+                menjadi mitra teknologi yang dapat diandalkan, NextSol hadir untuk menjembatani
+                gap antara kebutuhan digital pengguna dan solusi yang cepat, terjangkau, serta berkualitas.
               </p>
             </div>
 

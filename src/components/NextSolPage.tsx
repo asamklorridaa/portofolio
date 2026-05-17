@@ -187,26 +187,6 @@ export default function NextSolPage() {
         </div>
       </section>
 
-      {/* ── About NextSol CTA ─────────────────────────────────────────── */}
-      <section id="nextsol-about-cta">
-        <BlurFade delay={BLUR_FADE_DELAY * 10}>
-          <div className="flex items-center justify-between gap-4 py-4 border-y border-border">
-            <div className="flex flex-col gap-1">
-              <span className="font-semibold">Kenali NextSol Lebih Dalam</span>
-              <span className="text-sm text-muted-foreground">
-                Lihat identitas brand, logo, dan visi layanan kami.
-              </span>
-            </div>
-            <a href="/nextsol/about" id="nextsol-about-link">
-              <Button variant="outline" size="sm" className="flex-none gap-1.5">
-                About NextSol
-                <ArrowRight className="size-3.5" />
-              </Button>
-            </a>
-          </div>
-        </BlurFade>
-      </section>
-
       {/* ── Kenapa NextSol? Section ───────────────────────────────────── */}
       <section id="nextsol-why">
         <div className="flex min-h-0 flex-col gap-y-6">
@@ -229,6 +209,26 @@ export default function NextSolPage() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* ── About NextSol CTA ─────────────────────────────────────────── */}
+      <section id="nextsol-about-cta">
+        <BlurFade delay={BLUR_FADE_DELAY * 10}>
+          <div className="flex items-center justify-between gap-4 py-4 border-y border-border">
+            <div className="flex flex-col gap-1">
+              <span className="font-semibold">Kenali NextSol Lebih Dalam</span>
+              <span className="text-sm text-muted-foreground">
+                Lihat identitas brand, logo, dan visi layanan kami.
+              </span>
+            </div>
+            <a href="/nextsol/about" id="nextsol-about-link">
+              <Button variant="outline" size="sm" className="flex-none gap-1.5">
+                About NextSol
+                <ArrowRight className="size-3.5" />
+              </Button>
+            </a>
+          </div>
+        </BlurFade>
       </section>
 
       {/* ── CTA Final Section ─────────────────────────────────────────── */}
