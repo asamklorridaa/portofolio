@@ -79,7 +79,7 @@ export const DATA = {
     { name: "Git", icon: Git },
     { name: "VMware", icon: VMware },
     { name: "VirtualBox", icon: VirtualBox },
-    { name: "Linux", icon: Linux },
+    { name: "Linux", icon: Linux }, 
   ],
   navbar: [
     { href: "/", icon: House, label: "Home" },
