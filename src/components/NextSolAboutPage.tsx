@@ -196,7 +196,7 @@ export default function NextSolAboutPage() {
           <BlurFade delay={BLUR_FADE_DELAY * 7} inView>
             <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-1.5">
-                <h3 className="text-lg font-semibold">Makna Logo</h3>
+                <h3 className="text-lg font-semibold">Makna Logo 3</h3>
               </div>
 
               {/* Logo Display Area */}
